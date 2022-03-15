@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+
+}
+.container{
+    display:flex;
+    min-height:100vh;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+}
+.left{
+    width: 60%;
+    height:100%;
+    padding:0 40px;
+    padding-left: 10%;
+    margin-bottom:150px;
+}
+.inner-container{
+    max-width:400px;
+    padding-top:50px;
+}
+.right{
+width:40%;
+}
+.bg-img{
+    /* height:auto; */
+background-image: url(images/hero-desk.jpg);
+background-size: cover;
+background-position: center center;
+}
+.mob-img{
+    display:none;
+}
+.logo{
+    margin: 50px 0;
+    width:200px;
+}
+.left h1{
+    font-size: 3.75rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:hsl(0, 36%, 70%);
+    letter-spacing:10px;
+}
+.left h1 span{
+    font-weight: 500;
+    color:hsl(0, 6%, 24%);
+}
+.left p{
+    letter-spacing:1px;
+    line-height: 28px;
+    color:hsl(0, 36%, 70%);
+    margin: 25px 0 30px 0;
+}
+form{
+    height: 50px;
+    position:relative;
+}
+form input{
+    width:100%;
+    padding: 15px 20px;
+    outline: none;
+    border:1px solid hsl(0, 36%, 70%); 
+    border-radius:50px;
+
+}
+form input::placeholder{
+    color:hsl(0, 36%, 70%);
+    font-size: 15px;
+}
+form .error-icon{
+    position: absolute;
+    top: 13px;
+    right: 100px
+}
+form button{
+    position: absolute;
+    width: 90px;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 2px 2px 11px 5px #f4aaab82;
+    color:white;
+    transition: .3s ease-in;
+}
+form button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsla(0, 52%, 80%, 0.781));
+    box-shadow: 1px 8px 11px 2px #f4aaab;
+    border: none;
+}
+form h5{
+    color:hsl(0, 36%, 70%);
+    padding: 10px 0 0 20px;
+}
+
+@media screen and (max-width:745px) { 
+    .inner-container{
+        margin:0 auto;
+        text-align: center;
+    }
+    .left{
+        padding:0 0;
+        width:100%;
+    }
+    .logo{
+        margin: 25px 35px;
+        width:100px;
+    }
+    .inner-container h1{
+        font-size: 3rem;
+    }
+    form h5{
+        text-align: left;
+    }
+    .right{
+    display: none;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .mob-img{
+    display:block;
+    width:100%;
+}
+
+}
