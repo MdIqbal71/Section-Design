@@ -28,13 +28,12 @@ body {
     padding-top:50px;
 }
 .right{
-width:40%;
+    width:40%;
 }
 .bg-img{
-    /* height:auto; */
-background-image: url(images/hero-desk.jpg);
-background-size: cover;
-background-position: center center;
+    background-image: url(images/hero-desk.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .mob-img{
     display:none;
@@ -125,14 +124,14 @@ form h5{
         text-align: left;
     }
     .right{
-    display: none;
+        display: none;
     }
     .container{
         flex-direction: column-reverse;
     }
     .mob-img{
-    display:block;
-    width:100%;
+        display:block;
+        width:100%;
 }
 
 }
